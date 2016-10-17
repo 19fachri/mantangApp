@@ -14,9 +14,10 @@
 Blade::setContentTags('<%', '%>');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('public_page.welcome');
 });
 
+Route::get('logout', 'Auth\LoginController@logout');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
