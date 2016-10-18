@@ -123,7 +123,7 @@ class AdminBeritaController extends Controller
     public function destroy($id)
     {
         $data = Berita::find($id);
-        File::delete('uploads/berita/'.$data->gambar);
+        File::delete('uploads/berita/'.$data->cover);
         Berita::destroy($id);
         return redirect()->route('berita.index');
     }
