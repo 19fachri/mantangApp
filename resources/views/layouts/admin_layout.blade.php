@@ -7,6 +7,7 @@
     <title>@yield('title')</title>
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    @yield('head')
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
@@ -34,7 +35,7 @@
                         <a href="#">Berita Kegiatan</a>
                     </li>
                     <li>
-                        <a href="#">Berita Terkini</a>
+                        <a href="<% url('/admin/berita') %>">Berita Terkini</a>
                     </li>
                     <li>
                         <a href="#">Suara Rakyat</a>
