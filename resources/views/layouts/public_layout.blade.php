@@ -53,7 +53,7 @@
                             <a href="#">Berita Kegiatan</a>
                         </li>
                         <li>
-                            <a href="#">Berita Terkini</a>
+                            <a href="<% url('/berita') %>">Berita Terkini</a>
                         </li>
                         <li>
                             <a href="#">Suara Rakyat</a>
