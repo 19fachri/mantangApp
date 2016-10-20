@@ -23,3 +23,7 @@ Route::get('/home', 'HomeController@index');
 Route::resource('/admin/berita', 'AdminBeritaController');
 Route::get('/berita','BeritaController@index');
 Route::get('/berita/{judul}', 'BeritaController@detail');
+
+Route::resource('/admin/kegiatan', 'AdminKegiatanController');
+Route::get('/kegiatan', 'KegiatanController@index');
+Route::get('/kegiatan/{judul}', 'KegiatanController@detail');

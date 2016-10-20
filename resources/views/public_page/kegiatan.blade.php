@@ -8,7 +8,7 @@ Kabar Terkini Desa Mantang
 @section('content')
 @foreach($data as $dt)
 <div class="post-preview">
-    <a href="<% url('/berita/'.$dt->id) %>" >
+    <a href="<% url('/kegiatan/'.$dt->id) %>" >
         <h2 class="post-title">
             <% $dt->judul %>
         </h2>

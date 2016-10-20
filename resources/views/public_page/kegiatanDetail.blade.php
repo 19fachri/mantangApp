@@ -15,8 +15,10 @@ Kabar Terkini Desa Mantang
 						<h3><% $data->judul %></h3>
 						<h5><i class="fa fa-calendar"></i><a href="#"> <% $data->created_at %></a></h5>
 					</div>
-					<img src="<%asset("uploads/cover/".$data->cover)%>" alt="" class="img-responsive" />
+					<p>Tanggal Mulai Kegiatan : {!! $data->tanggal_mulai !!}, Tanggal Selesai Kegiatan : {!! $data->tanggal_selesai !!} </p>
+					<img src="<%asset("uploads/coverKegiatan/".$data->cover)%>" alt="" class="img-responsive" />
 				</div>
+
 				<p>{!! $data->deskripsi !!}</p>
 			</article>
 		</div>
