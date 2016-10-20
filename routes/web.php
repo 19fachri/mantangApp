@@ -13,9 +13,7 @@
 
 Blade::setContentTags('<%', '%>');
 
-Route::get('/', function () {
-    return view('public_page.welcome');
-});
+Route::get('/', 'BeritaController@index');
 
 Route::get('logout', 'Auth\LoginController@logout');
 Auth::routes();
@@ -23,3 +21,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('/admin/berita', 'AdminBeritaController');
+Route::get('/berita','BeritaController@index');
+Route::get('/berita/{judul}', 'BeritaController@detail');
+
+Route::resource('/admin/kegiatan', 'AdminKegiatanController');
+Route::get('/kegiatan', 'KegiatanController@index');
+Route::get('/kegiatan/{judul}', 'KegiatanController@detail');

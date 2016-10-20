@@ -33,7 +33,7 @@
                 @if(Auth::check())
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Berita Kegiatan</a>
+                        <a href="<% url('/admin/kegiatan') %>">Berita Kegiatan</a>
                     </li>
                     <li>
                         <a href="<% url('/admin/berita') %>">Berita Terkini</a>

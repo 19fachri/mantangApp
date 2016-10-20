@@ -50,10 +50,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#">Berita Kegiatan</a>
+                            <a href="<% url('/kegiatan')%>">Berita Kegiatan</a>
                         </li>
                         <li>
-                            <a href="#">Berita Terkini</a>
+                            <a href="<% url('/berita') %>">Berita Terkini</a>
                         </li>
                         <li>
                             <a href="#">Suara Rakyat</a>
