@@ -1,9 +1,12 @@
 @extends('layouts.public_layout')
 @section('title')
-Kabar Terkini Desa Mantang
+<% $data->judul %>
+@endsection
+@section('page_cover')
+<% asset('uploads/coverKegiatan/'.$data->cover) %>
 @endsection
 @section('page_description')
-Kabar Terkini Desa Mantang
+<p>Tanggal Mulai Kegiatan : {!! $data->tanggal_mulai !!}<br/>Tanggal Selesai Kegiatan : {!! $data->tanggal_selesai !!} </p>
 @endsection
 @section('content')
 <div class="container">
@@ -13,12 +16,11 @@ Kabar Terkini Desa Mantang
 				<div class="post-image">
 					<div class="post-heading">
 						<h3><% $data->judul %></h3>
-						<h5><i class="fa fa-calendar"></i><a href="#"> <% $data->created_at %></a></h5>
+						<p>Tanggal Mulai Kegiatan : {!! $data->tanggal_mulai !!}<br/>Tanggal Selesai Kegiatan : {!! $data->tanggal_selesai !!} </p>
+						<h5><i class="fa fa-calendar"></i><a href="#"> Ditulis pada : <% $data->created_at %></a></h5>
 					</div>
-					<p>Tanggal Mulai Kegiatan : {!! $data->tanggal_mulai !!}, Tanggal Selesai Kegiatan : {!! $data->tanggal_selesai !!} </p>
-					<img src="<%asset("uploads/coverKegiatan/".$data->cover)%>" alt="" class="img-responsive" />
+					<img src="<% asset('uploads/coverKegiatan/'.$data->cover) %>" alt="" class="img-responsive" />
 				</div>
-
 				<p>{!! $data->deskripsi !!}</p>
 			</article>
 		</div>
