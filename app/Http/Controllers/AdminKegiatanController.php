@@ -33,7 +33,7 @@ class AdminKegiatanController extends Controller
      */
     public function create()
     {
-        return view('admin_page.Kegiatan.create');
+        return view('admin_page.kegiatan.create');
     }
 
     /**

@@ -1,9 +1,12 @@
 @extends('layouts.public_layout')
 @section('title')
-Kabar Terkini Desa Mantang
+Berita Terkini Desa Mantang
 @endsection
 @section('page_description')
-Kabar Terkini Desa Mantang
+Ketahui berita terbaru seputar Desa Mantang
+@endsection
+@section('page_cover')
+<% asset('uploads/cover/'.$data[0]->cover) %>
 @endsection
 @section('content')
 @foreach($data as $dt)
