@@ -27,3 +27,5 @@ Route::get('/berita/{judul}', 'BeritaController@detail');
 Route::resource('/admin/kegiatan', 'AdminKegiatanController');
 Route::get('/kegiatan', 'KegiatanController@index');
 Route::get('/kegiatan/{judul}', 'KegiatanController@detail');
+
+Route::resource('suararakyat', 'SuaraRakyatController');
