@@ -6,9 +6,9 @@
 <% asset('suara_rakyat/img/'.$data->foto.'.JPG') %>
 @endsection
 @section('content')
-<div class="container">
+<div class="post-preview">
 	<div class="row">
-		<div class="col-lg-8">
+		<div class="col-md-12">
 			<article>
 				<div class="post-image">
 					<div class="post-heading">
@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-8">
+		<div class="col-md-12">
 			<div id="disqus_thread"></div>
 		</div>
 	</div>

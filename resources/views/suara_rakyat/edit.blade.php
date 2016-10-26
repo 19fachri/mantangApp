@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="container">
+<div class="post-preview">
     <div class="row">
     	<form role="form" method="PUT" action="<% url('/suararakyat/'.$data->id) %>">
         <% csrf_field() %>

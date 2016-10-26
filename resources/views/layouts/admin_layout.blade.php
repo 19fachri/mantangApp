@@ -39,7 +39,7 @@
                         <a href="<% url('/admin/berita') %>">Berita Terkini</a>
                     </li>
                     <li>
-                        <a href="#">Suara Rakyat</a>
+                        <a href="<% url('/suararakyat') %>">Suara Rakyat</a>
                     </li>
                 </ul>
                 @endif

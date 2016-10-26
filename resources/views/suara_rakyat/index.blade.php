@@ -6,7 +6,8 @@ Suara Rakyat Mantang
 <% asset('suara_rakyat/img/'.$data[0]->foto.'.JPG') %>
 @endsection
 @section('content')
-<div class="container">
+<div class="post-preview">
+
 	<div class="row">
 		<div class="col-md-8">
 			<a href="<%URL::to('suararakyat/create')%>" class="btn btn-success btn-sm">
@@ -37,5 +38,6 @@ Suara Rakyat Mantang
     	</div>
 	    </div>
 	</div>
+
 </div>
 @endsection
