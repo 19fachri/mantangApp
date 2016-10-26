@@ -1,5 +1,10 @@
 @extends('layouts.public_layout')
-
+@section('title')
+Suara Rakyat Mantang
+@endsection
+@section('page_cover')
+<% asset('suara_rakyat/img/'.$data[0]->foto.'.JPG') %>
+@endsection
 @section('content')
 <div class="container">
 	<div class="row">
@@ -17,7 +22,7 @@
     			<h2><%$dt->judul%></h2>
     			<h4><%$dt->nama%> - <%$dt->alamat%></h4>
     			<p><img src="<% asset("suara_rakyat/img/".$dt->foto.".JPG")%>" style="width: 300px;height;100%;"></p>
-    			<p><%$dt->deskripsi%> - <a href="<?php echo url('suararakyat/'.$dt->id);?>">Lihat Selengkapnya</a></p>
+    			<p>{!! substr($dt->deskripsi, 0, 100) !!}..... <a href="<?php echo url('suararakyat/'.$dt->id);?>">Lihat Selengkapnya</a></p>
     			@if(Auth::user() != NULL)
 					<form method="POST" action="<%URL::to('suararakyat/'.$dt->id)%>">
 					{!! csrf_field() !!}
