@@ -56,7 +56,7 @@
                             <a href="<% url('/berita') %>">Berita Terkini</a>
                         </li>
                         <li>
-                            <a href="#">Suara Rakyat</a>
+                            <a href="<% url('/suararakyat') %>">Suara Rakyat</a>
                         </li>
                         @if(Auth::check())
                         <li>
