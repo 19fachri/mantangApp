@@ -6,7 +6,11 @@ Berita Terkini Desa Mantang
 Ketahui berita terbaru seputar Desa Mantang
 @endsection
 @section('page_cover')
+@if(isset($data[0]->cover))
 <% asset('uploads/cover/'.$data[0]->cover) %>
+@else
+<% asset('theme/img/home-bg.jpg') %>
+@endif
 @endsection
 @section('content')
 @foreach($data as $dt)

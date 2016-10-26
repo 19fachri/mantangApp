@@ -1,5 +1,7 @@
 @extends('layouts.admin_layout')
-
+@section('title')
+Daftar berita terkini
+@endsection
 @section('content')
 <div class="container">
 	<div class="row">
