@@ -39,7 +39,8 @@ class SuaraRakyatController extends Controller
     public function create()
     {
         //
-        return view('suara_rakyat.create');
+        $data = SuaraRakyat::orderBy('id','DESC')->paginate(10);
+        return view('suara_rakyat.create')->withData($data);
     }
 
     /**

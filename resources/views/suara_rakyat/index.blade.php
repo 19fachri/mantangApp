@@ -9,7 +9,7 @@ Suara Rakyat Mantang
 <div class="post-preview">
 
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-12">
 			<a href="<%URL::to('suararakyat/create')%>" class="btn btn-success btn-sm">
 				<span class="glyphicon glyphicon-plus" aria-hidden="true">Suara Rakyat</span>
 			</a>
@@ -17,7 +17,7 @@ Suara Rakyat Mantang
 		<br>
 	</div>
     <div class="row">
-    	<div class="col-md-8">
+    	<div class="col-md-12">
     	<div>
     		@foreach($data as $dt)
     			<h2><%$dt->judul%></h2>

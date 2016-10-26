@@ -1,5 +1,10 @@
 @extends('layouts.public_layout')
-
+@section('title')
+Suara Rakyat Mantang
+@endsection
+@section('page_cover')
+<% asset('suara_rakyat/img/'.$data[0]->foto.'.JPG') %>
+@endsection
 @section('head')
 	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 @endsection
@@ -7,7 +12,7 @@
 @section('content')
 <div class="post-preview">
     <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
     <h3>Silahkan tambahkan komentar dan saran yang ingin dimasukkan.</h3>
     <hr>
     	<form class="form-horizontal" role="form" method="POST" action="<% url('/suararakyat') %>" enctype="multipart/form-data">
