@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 @section('title')
-Edit Kegiatan
+Edit berita kegiatan
 @endsection
 @section('head')
 	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
